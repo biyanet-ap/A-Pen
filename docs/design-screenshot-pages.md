@@ -422,7 +422,7 @@ static readonly int[] NextBoard = { 3, 2, 0, 1 }; // [0]끄기→3녹, [1]흰→
 
 **문서**: `PRIVACY.md` 한·영·일(앱 이름, 경로, 문의처, 정보 창 설명, "필기는 디스크에 저장 안 됨" → 캡처는 사용자가 저장할 때만), 한국어 README 초안. 영어·일본어 README는 한국어 초안을 옮길 때 새로 씀. → 2026-10-28 반영: `README.md`=영어(GitHub 첫 화면), `README.ko.md`=한국어, `README.ja.md`=일본어, `README.en.md`는 삭제. 버튼 이름은 앱의 각 언어 문구와 같게 맞춤(예: 말풍선 = Note / 吹き出し, 칠판 = ボード). HighPen 표기는 원작을 가리키는 곳(원작 소개, 원작과의 관계, 라이선스)에만 남김.
 
-**빌드 결과물**: `dist/`의 예전 `HighPen.exe`, `HighPen-Setup.exe`는 지움. 2026-10-28 결정: 실행 파일(`A-Pen.exe`, `A-Pen-Setup.exe`)은 저장소에 넣지 않고 GitHub 릴리스에만 올림. README 다운로드 링크도 릴리스를 가리킴.
+**빌드 결과물**: `dist/`의 예전 `HighPen.exe`, `HighPen-Setup.exe`는 지움. 2026-10-28 결정(같은 날 변경): 실행 파일(`A-Pen.exe`, `A-Pen-Setup.exe`)은 원작처럼 저장소 `dist/`에도 커밋하고 GitHub 릴리스에도 올림. README 다운로드 링크는 릴리스를 가리킴.
 
 ### 2.6.9 앱 아이콘 변경 — 녹색 칠판 + 분필 A (2026-10-28)
 
@@ -533,3 +533,4 @@ static readonly int[] NextBoard = { 3, 2, 0, 1 }; // [0]끄기→3녹, [1]흰→
 | 2026-10-28 | README 다시 작성(3개 언어, 236줄 → 101줄): 설치 방법(설치 프로그램 질문 3개, `/S`, 스마트 앱 컨트롤), 기능 표 12줄, 전자칠판 4단계, "원본 HighPen" 섹션(더한 것·다른 점·원작 표기) 추가. v1.0.0 화면으로 새 스크린샷 5장(`screen/hero.jpg`, `board.jpg`, `area-erase.jpg`, `settings.png`, `about.png`)을 영어 화면으로 찍고 예전 그림 7장 삭제. 확대 화면은 화면 캡처에 확대가 찍히지 않아 뺌 |
 | 2026-10-28 | 실행 파일은 저장소에 넣지 않고 릴리스에만 올리기로 결정. `dist/`의 예전 HighPen exe 2개 삭제 커밋. 릴리스 v1.0.0 문구와 SHA-256 준비 |
 | 2026-10-28 | 기록 정리: 지금 파일 그대로 커밋 1개짜리 `main`을 새로 만들고 GitHub에 강제 push(사용자가 실행). 이전 기록은 PC의 `backup/full-history`에 보관. 원작 저작권 표기는 `LICENSE`·README에 유지 |
+| 2026-10-28 | 결정 변경: 실행 파일을 저장소 `dist/`에도 커밋(사용자 요청). 05:54 빌드(새 아이콘 포함), SHA-256 A-Pen-Setup.exe `a39a28e6…`, A-Pen.exe `b87c3da8…` |
